@@ -11,14 +11,13 @@ class Empleado(models.Model):
    telefono = models.CharField(max_length=15)
    email = models.EmailField()
    cargo = models.CharField(max_length=50, choise=CARGO)
-
-   class Meta:
-     verbose_name = 'Empleado'
-     verbose_name_plural = 'Empleados'
-     db_table = 'Empleado'
-
-def __str__(self):
-        return self.nombre
+   
+class Meta:
+ verbose_name = 'Empleado'
+ verbose_name_plural = 'Empleados'
+ db_table = 'Empleado'
+ def __str__(self):
+   return self.nombre
     
      
 
